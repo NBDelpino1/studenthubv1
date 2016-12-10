@@ -42,3 +42,5 @@ class CreateActionsTable extends Migration
         Schema::dropIfExists('actions');
     }
 }
+
+//Nick note: migration test successful
