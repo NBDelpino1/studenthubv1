@@ -15,6 +15,19 @@ class CreateActionsTable extends Migration
     {
         Schema::create('actions', function (Blueprint $table) {
             $table->increments('id');
+            $table->text('studentName');
+            $table->date('studentLoginDate');
+            $table->time('studentLoginTime');
+            $table->text('teacherLoginNotes');
+            $table->text('homeworkTitle');
+            $table->text('linkDisplayingHomework');
+            $table->date('dateHomeworkGiven');
+            $table->date('dateHomeworkDue');
+            $table->text('linkStudentSubmitted');
+            $table->boolean('homeworkStatus');
+            $table->text('homeworkResourcesLink');
+            $table->dateTime('dateHomeworkSubmitted');
+            $table->text('teacherHomeworkComments');
             $table->timestamps();
         });
     }
